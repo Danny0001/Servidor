@@ -6,7 +6,9 @@ const path = require('path')
 app.use('/Public', express.static(path.join(__dirname, 'Public')))
 app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/Encendido', ( req, res ) => {
+  estado='Encendido'
   res.sendFile(path.join (__dirname+'/Html Encedido.html'))
+  cosole.log(estado)
 })
 app.get('/Apagado', (req, res) => {
   res.sendfile(path.join(__dirname+'/html Apagado.html'))
