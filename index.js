@@ -18,6 +18,8 @@ app.get('/Apagar', (req, res) => {
   res.sendfile(path.join(__dirname+'/html Apagado.html'))
   console.log(estado)
 })
-
+app.get('/estado', (req,res) =>  {
+  res.send({estado: estado})
+})
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
