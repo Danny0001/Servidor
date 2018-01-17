@@ -22,4 +22,4 @@ app.get('/estado', (req,res) =>  {
   res.send({estado: estado})
 })
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(2002, () => console.log('Example app listening on port 2002!'))
